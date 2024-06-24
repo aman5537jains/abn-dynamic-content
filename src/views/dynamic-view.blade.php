@@ -8,13 +8,13 @@
     <div class="dashHead-right">
        <div class="dashHead-action">
         @if($controller->hasPermission("add",$module,false) &&  $canAdd)
-        <a class="buttons dbtn-secondary" href="{{$controller->action("create",["view_type"=>"VIEW"])}}"><i class="fas fa-plus-circle"></i>{{'Add '.singularize($module_title)." View"}}</a>
+        <a class="buttons dbtn-secondary" href="{{$controller->action("create",["view_type"=>"VIEW"])}}"><i class="fas fa-plus-circle"></i>{{'Add '.\Illuminate\Support\Str::singular($module_title)." View"}}</a>
       @endif
           @if($controller->hasPermission("add",$module,false) &&  $canAdd)
-            <a class="buttons dbtn-secondary" href="{{$controller->action("create",["view_type"=>"LIST"])}}"><i class="fas fa-plus-circle"></i>{{'Add '.singularize($module_title)." List"}}</a>
+            <a class="buttons dbtn-secondary" href="{{$controller->action("create",["view_type"=>"LIST"])}}"><i class="fas fa-plus-circle"></i>{{'Add '.\Illuminate\Support\Str::singular($module_title)." List"}}</a>
           @endif
           @if($controller->hasPermission("add",$module,false) &&  $canAdd)
-          <a class="buttons dbtn-secondary" href="{{$controller->action("create",["view_type"=>"FORM"])}}"><i class="fas fa-plus-circle"></i>{{'Add '.singularize($module_title)." Form"}}</a>
+          <a class="buttons dbtn-secondary" href="{{$controller->action("create",["view_type"=>"FORM"])}}"><i class="fas fa-plus-circle"></i>{{'Add '.\Illuminate\Support\Str::singular($module_title)." Form"}}</a>
         @endif
        </div>
     </div>
