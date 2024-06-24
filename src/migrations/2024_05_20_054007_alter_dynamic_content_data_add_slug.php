@@ -13,7 +13,7 @@ class AlterDynamicContentDataAddSlug extends Migration
      */
     public function up()
     {
-         \DB::statement("ALTER TABLE `dynamic_content_data` ADD `slug` VARCHAR(255) NOT NULL AFTER `id`;");
+        //  \DB::statement("ALTER TABLE `dynamic_content_data` ADD `slug` VARCHAR(255) NOT NULL AFTER `id`;");
     }
 
     /**
