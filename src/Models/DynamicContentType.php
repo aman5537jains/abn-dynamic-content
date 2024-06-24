@@ -1,7 +1,7 @@
 <?php
 namespace Aman5537jains\AbnDynamicContentPlugin\Models;
 
-use Cviebrock\EloquentSluggable\Sluggable;
+use Aman5537jains\AbnCms\Lib\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 
 class DynamicContentType extends Model{
